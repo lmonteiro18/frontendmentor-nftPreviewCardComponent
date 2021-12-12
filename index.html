@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <!-- Loads Font (Outfit) from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+<body class="flex">
+
+<div class="card-underlay1 round-border flex">
+    <div class="card-underlay2 round-border flex">
+        <div class="card round-border flex">
+            <div class="collection-image">
+                <img class="collection-image__img round-border" src="images/image-equilibrium.jpg" width="604" height="604"
+                     alt="Collection photo (crystal cube in a darkblue background)">
+                <div class="collection-image__overlay flex round-border">
+                    <img class="eye-icon" src="images/icon-view.svg" width="48" height="48" alt="Eye icon">
+                </div>
+            </div>
+
+            <div class="collection-details">
+                <h1 class="collection-details__title color-white no-margin pointer">Equilibrium #3429</h1>
+
+                <p class="collection-details__description color-softblue font-light">Our Equilibrium collection promotes balance and calm.</p>
+
+                <div class="flex-container flex">
+                    <div class="collection-details__price-div">
+                        <img class="collection-details__price-img"  src="images/icon-ethereum.svg" width="11" height="18" alt="Favicon">
+                        <p class="collection-details__price color-cyan inline-block no-margin font-medium">0.041 ETH</p>
+                    </div>
+                    <div class="collection-details__duration-div">
+                        <img class="collection-details__duration-img" src="images/icon-clock.svg" width="17" height="17" alt="Clock icon">
+                        <p class="collection-details__duration color-softblue inline-block no-margin font-medium">3 days left</p>
+                    </div>
+                </div>
+
+                <div class="collection-details__creator flex">
+                    <img class="collection-details__creator-img" src="images/image-avatar.png" width="132" height="132"
+                         alt="Photo of the creator (Jules Wyvern)">
+                    <p class="collection-details__creator-text inline-block no-margin color-softblue font-medium">Creation of <b class="collection-details__creator-name color-white font-medium pointer">Jules Wyvern</b>
+                    <p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="attribution color-softblue">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Luís Monteiro</a>.
+</div>
+</body>
+</html>

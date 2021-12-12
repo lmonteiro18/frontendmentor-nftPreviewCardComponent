@@ -1,0 +1,221 @@
+html {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.1vw;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.card-underlay1 {
+    background-color: hsl(217, 54%, 12%);
+    height: 44.5vw;
+    width: 28%;
+    margin-bottom: 30px;
+}
+
+.card-underlay2 {
+    background-color: hsl(217, 54%, 9%);
+    height: 90%;
+    margin: auto;
+    width: 90%;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    height: 95%;
+    margin: auto;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.collection-image, .collection-details {
+    position: relative;
+    width: 86%;
+    height: auto;
+    margin: auto;
+}
+
+.collection-image__img {
+    width: 100%;
+    height: auto;
+}
+
+.collection-image__overlay {
+    opacity: 0;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    transition: opacity .35s ease-in-out;
+    cursor: pointer;
+}
+
+.collection-image__overlay:hover {
+    opacity: 100%;
+    transition: opacity .35s ease-in-out;
+}
+
+.flex-container {
+    justify-content: space-between;
+}
+
+.collection-details {
+    margin-top: 0;
+}
+
+.collection-details__title {
+    font-size: 1.1rem;
+    transition: color .25s ease-in-out;
+}
+
+.collection-details__title:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.collection-details__description {
+    font-size: 1rem;
+}
+
+.collection-details__price-div, .collection-details__duration-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collection-details__price-img, .collection-details__duration-img {
+    margin-right: 5px;
+}
+
+.collection-details__price, .collection-details__duration {
+    font-size: 0.85rem;
+}
+
+.collection-details__creator {
+    align-items: center;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    margin-top: 20px;
+    padding-top: 15px;
+}
+
+.collection-details__creator-img {
+    width: 10%;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 1vw;
+    margin-right: 15px;
+}
+
+.collection-details__creator-text {
+    font-size: 0.85rem;
+}
+
+.collection-details__creator-name {
+    transition: color .25s ease-in-out;
+}
+
+.collection-details__creator-name:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.font-medium {
+    font-weight: 400;
+}
+
+.font-bold {
+    font-weight: 600;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.color-white {
+    color: hsl(0, 0%, 100%);
+}
+
+.color-softblue {
+    color: hsl(215, 51%, 70%);
+}
+
+.color-cyan {
+    color: hsl(178, 100%, 50%);
+}
+
+.round-border {
+    border-radius: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 1.8vw;
+    }
+
+    .card-underlay1 {
+        height: 68vw;
+        width: 42%;
+    }
+
+    .collection-details__creator-img {
+        border-radius: 1.8vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 2.5vw;
+    }
+
+    .card-underlay1 {
+        height: 104vw;
+        width: 65%;
+    }
+
+    .collection-details__creator-img {
+        border-radius: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 4vw;
+    }
+
+    .card-underlay1 {
+        height: 150vw;
+        width: 95%;
+    }
+
+    .collection-details__creator-img {
+        border-radius: 4vw;
+    }
+}
